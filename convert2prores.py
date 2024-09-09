@@ -27,7 +27,8 @@ def convert_videos(input_folder, output_folder):
                 '-i', video_file,
                 '-c:v', 'prores_ks',
                 '-profile:v', '4',
-                '-c:a', 'pcm_s16l',
+                '-c:a', 'pcm_s16le',
+                '-pix_fmt', 'yuva444p10le',
                 output_file
             ]
             

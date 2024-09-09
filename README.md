@@ -5,5 +5,5 @@
 Take as input a video and output a ProRes video.
 
 ```bash
-ffmpeg -i input.mov -c:v prores_ks -profile:v 4 -c:a pcm_s16l -pix_fmt yuva444p10le  output.mov
+ffmpeg -i input.mov -c:v prores_ks -profile:v 4 -c:a pcm_s16le -pix_fmt yuva444p10le  output.mov
 ```
